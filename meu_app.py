@@ -8,6 +8,7 @@ with st.container():
     st.title("Dashboard de Contratos")
     st.write("Informações sobre os contratos fechados pela Hash&Co ao longo de maio")
     st.write("Quer aprender Python? [Clique aqui](https://www.hashtagtreinamentos.com/curso-python)")
+    st.write("João Luiz")
 
 
 @st.cache_data
@@ -22,4 +23,5 @@ with st.container():
     dados = carregar_dados()
     dados = dados[-num_dias:]
     st.area_chart(dados, x="Data", y="Contratos")
+
 
